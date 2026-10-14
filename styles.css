@@ -1,1 +1,49 @@
-/*  your css code here. If applicable */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 20px;
+        }
+
+        .cell {
+            height: 100px;
+            border: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            cursor: pointer;
+            background-color: yellow;
+        }
+
+        .cell:hover {
+            background-color: yellowgreen;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
